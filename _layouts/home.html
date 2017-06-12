@@ -1,25 +1,24 @@
 ---
-layout: default
+type: blog
 ---
+{% include head.html %}
+{% include body.html %}
+{% include site-header.html %}
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  {{ content }}
-
-  <ul class="post-list">
+{% if site.posts %}
+<div class='post-index' id='toc'>
+  <div class='container'>
+    <h3 class='bottom-space-1'>Previously on TIL:</h3>
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
+    <a class='post-index-item' href="{{ base }}{{ post.url | replace: ".html", "" }}">
+        <span class='date'>{{ post.date | date_to_string }}</span>
+        <span class='article'>{{ post.title }}</span>
+        <strong class='tag'>{{ post.tags | first }}</strong>
+      </a>
     {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-
+  </div>
 </div>
+{% endif %}
+
+{% include about-the-site.html %}
+{% include end.html %}

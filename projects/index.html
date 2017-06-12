@@ -1,0 +1,125 @@
+<style>
+
+.involvement ul:before, .involvement ul:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+.involvement ul:after {
+  clear: both; }
+
+.involvement ul {
+  padding: 0;
+  list-style: none;
+  text-align: justify;
+  font-size: 0.1px; }
+  .involvement ul:after {
+    content: '';
+    display: inline-block;
+    width: 100%; }
+  .involvement ul > li {
+    margin-bottom: 16px;
+    margin-bottom: 1rem;
+    padding: 8px;
+    padding: 0.5rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    width: 16%;
+    border: thin solid #DDD;
+    background: #F6F6F6; }
+    @media (max-width: 70em) {
+      .involvement ul > li {
+        width: 24%; } }
+    @media (max-width: 35em) {
+      .involvement ul > li {
+        width: 48%; } }
+    .involvement ul > li a {
+      margin: -4px 0 0 -4px;
+      margin: -0.25rem 0 0 -0.25rem;
+      padding: 4px;
+      padding: 0.25rem;
+      display: block;
+      position: relative;
+      width: 100%;
+      background: white; }
+      .involvement ul > li a:before {
+        content: '';
+        display: block;
+        padding-top: 100%; }
+    .involvement ul > li img {
+      -webkit-transition: all 250ms linear;
+      -o-transition: all 250ms linear;
+      transition: all 250ms linear;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      max-width: 100%;
+      margin-top: 0%;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%); }
+      .involvement ul > li img:hover {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%); }
+    .involvement ul > li h3 {
+      font-size: 15px;
+      font-size: 1.1rem;
+      padding: 8px 0 0 0;
+      padding: 0.5rem 0 0 0;
+      height: 32px;
+      height: 2rem;
+      margin: 0;
+      line-height: 1;
+      font-weight: normal;
+      border-bottom: none;
+      text-align: left; }
+    .involvement ul > li p {
+      font-size: 16px;
+      font-size: 1rem;
+      height: 160px;
+      height: 10rem;
+      margin: 0;
+      padding: 0; }
+
+</style>
+
+<section class="involvement">
+	<h2>Side Projects</h2>
+	<ul>
+		<li>
+			<a href="https://github.com/jomjose/js-algorithms"><img src="" alt="JS Algorithms"></a>
+			<h3>JS Algorithms</h3>
+		</li>
+		<li>
+			<a href="http://jomjose.github.io/todo-list/"><img src="" alt="Todo List"></a>
+			<h3>Todo List</h3>
+		</li>
+		<li>
+			<a href="https://github.com/jomjose/javascript-patterns-snippets"><img src="" alt="Sublime Snippet"></a>
+			<h3>Sublime Snippet</h3>
+		</li>
+		<li>
+			<a href="https://github.com/jomjose/daily-bucket/"><img src="" alt="Dialy Bucket"></a>
+			<h3>Dialy Bucket</h3>
+		</li>
+		<li>
+			<a href="http://jomjose.github.io/twenty-minutes/"><img src="" alt="Twenty Minutes"></a>
+			<h3>Twenty Minutes</h3>
+		</li>
+		<li>
+			<a href="http://jomjose.github.io/thunder-note/"><img src="" alt="Thunder Note"></a>
+			<h3>Thunder Note</h3>
+		</li>
+		<!-- <li>
+			<a href="https://github.com/jomjose/os-development"><img src="" alt="OS Development"></a>
+			<h3>OS Development</h3>
+		</li> -->
+	</ul>
+</section>
+
+
+
